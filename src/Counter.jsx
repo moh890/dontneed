@@ -1,10 +1,6 @@
 import React, { Component } from "react";
 
 class Counter extends Component {
-  // state = {
-  //   value: this.props.state.value,
-  // };
-
   render() {
     return (
       <div>
@@ -25,10 +21,6 @@ class Counter extends Component {
     );
   }
 
-  // handleIncrement = () => {
-  //   this.setState({ value: this.state.value + 1 });
-  // };
-
   countStyle() {
     let str = "badge m-2 badge-";
     return this.props.state.value === 0
@@ -41,5 +33,4 @@ class Counter extends Component {
     return value === 0 ? "zero" : value;
   }
 }
-
 export default Counter;
